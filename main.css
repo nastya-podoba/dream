@@ -1,0 +1,270 @@
+body {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+	color: #201b2d;
+	font-size: 15px;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+div, p, input, button, form, span, a, ul, li {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 700;
+}
+
+p {
+	line-height: 1.65em;
+	font-weight: 400;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.header {
+	background: rgba(78,189,254,1);
+	background: -moz-linear-gradient(-45deg, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(78,189,254,1)), color-stop(100%, rgba(55,144,217,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: linear-gradient(135deg, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ebdfe', endColorstr='#3790d9', GradientType=1 );
+	padding-top: 60px;
+	padding-bottom: 143px;
+	color: #fff;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.offer {
+	width: 570px;
+}
+
+.title {
+	font-size: 37px;
+}
+
+.title span {
+	font-size: 59px;
+}
+
+.intro {
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 37px;
+	margin-top: 44px;
+	width: 370px;
+}
+
+.btn {
+	background: #ffd429;
+	color: #000;
+	font-family: 'Montserrat', sans-serif;
+	display: block;
+	width: 221px;
+	height: 57px;
+	padding: 19px 0;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+
+.btn:hover {
+	background: #d9860e;
+}
+
+.desktop {
+	margin-top: 60px;
+	margin: 0;
+}
+
+.learn {
+	padding-top: 107px;
+	padding-bottom: 120px;
+}
+
+.section-title {
+	font-size: 30px;
+	text-align: center;
+}
+
+.skills {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 70px;
+	text-align: center;
+}
+
+.skill {
+	width: 300px;
+	margin-top: 80px;
+	background: url('../img/icon1.png') no-repeat top center;
+}
+
+.skill-title {
+	font-size: 19px;
+	margin-top: 98px;
+}
+
+.skill-text {
+	margin-top: 15px;
+}
+
+.skill-free {
+	width: 267px;
+	background: url('../img/icon2.png') no-repeat top center;
+}
+
+.skill-change {
+	background: url('../img/icon3.png') no-repeat top center;
+}
+
+.mail {
+	background: #ecf3f8;
+	padding-top: 103px;
+	padding-bottom: 100px;
+}
+
+.form {
+	margin-top: 64px;
+	text-align: center;
+}
+
+.input {
+	width: 343px;
+	border: 1px solid #bbb;
+	color: #bbb;
+	font-size: 15px;
+	font-family: 'Ubuntu', sans-serif;
+	height: 47px;
+	padding-left: 25px;
+	border-radius: 3px;
+	display: flex;
+	justify-content: center;
+	margin: 15px auto;
+}
+
+
+.btn-form {
+	width: 343px;
+	border: 0;
+	cursor: pointer;
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	justify-content: center;
+	margin: 15px auto;
+}
+
+.footer {
+	padding: 60px 0;
+	background: #164d7a;
+}
+
+.credits {
+	color: #fff;
+	font-size: 14px;
+	margin: 0;
+	text-align: center;
+}
+
+.animated {
+	opacity: 0;
+}
+
+.offer {
+	animation-delay: 0.3s;
+}
+
+.desktop {
+	animation-delay: 0.3s;
+}
+
+.skill {
+	animation-delay: 0.5s;
+}
+
+.skill-free {
+	animation-delay: 1s;
+}
+
+.skill-change {
+	animation-delay: 1.5s;
+}
+
+.form {
+	animation-delay: 0.5s;
+}
+
+
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 960px;
+	}
+	.desktop {
+		display: block;
+	    width: 60%;
+	    margin: 60px auto 0;
+	}
+}
+	
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+	}
+	.wrapper {
+		flex-direction: column;
+	}
+	.offer {
+		width: 100%;
+	}
+	.intro {
+		width: auto;
+	}
+	br {
+		display: none;
+	}
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+	.container {
+		width: 540px;
+	}
+	.skills {
+		flex-direction: column;
+	}
+	.skill {
+		width: auto;
+		margin-top: 30px;
+	}
+	.header {
+		padding-bottom: 80px;
+	}
+}
+
+/* 0 - 576px */
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+	}
+	.input {
+		width: 100%;
+	}
+	.btn {
+		width: 100%;
+	}
+}
